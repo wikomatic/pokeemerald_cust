@@ -15,6 +15,8 @@
 #include "strings.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "sound.h"
+#include "overworld.h"
 
 // Task data
 enum
@@ -579,6 +581,23 @@ static void FrameType_DrawChoices(u8 selection)
     DrawOptionMenuChoice(text, 128, YPOS_FRAMETYPE, 1);
 }
 
+void StopOrPlayBGM(u8 selection)
+{
+    if (selection == 0)
+    {
+        StopMapMusic();
+    }
+    else
+    {
+        if (IsBGMStopped())
+        {
+            gSaveBlock2Ptr->optionsButtonMode = OPTIONS_BUTTON_MODE_LR;
+            u16 currLocationMusic = GetCurrLocationDefaultMusic();
+            PlayNewMapMusic(currLocationMusic);
+        }
+    }
+}
+
 static u8 ButtonMode_ProcessInput(u8 selection)
 {
     if (gMain.newKeys & DPAD_RIGHT)
@@ -589,6 +608,7 @@ static u8 ButtonMode_ProcessInput(u8 selection)
             selection = 0;
 
         sArrowPressed = TRUE;
+        StopOrPlayBGM(selection);
     }
     if (gMain.newKeys & DPAD_LEFT)
     {
@@ -598,6 +618,7 @@ static u8 ButtonMode_ProcessInput(u8 selection)
             selection = 2;
 
         sArrowPressed = TRUE;
+        StopOrPlayBGM(selection);        
     }
     return selection;
 }
