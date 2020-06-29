@@ -5,11 +5,13 @@
 [travis]: https://travis-ci.org/pret/pokeemerald
 [travis-badge]: https://travis-ci.org/pret/pokeemerald.svg?branch=master
 
-This is a decompilation of Pokémon Emerald.
+## About this branch
 
-It builds the following ROM:
+Uses the sound option in the player settings to toggle background music (BGM) instead with the SFX intact; replaces the Mono setting with BGM Off and Stereo setting with BGM On (there's no reason to play the game in Mono anyway.)
 
-* [**pokeemerald.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=1961) `sha1: f3ae088181bf583e55daf962a92bb46f4f1d07b7`
+It can easily be modified to user another option if required. Just look at `StopOrPlayBGM` in [option_menu.c](src/option_menu.c).
+
+This is especially useful to play the game with increased speed, or to accompany a soundtrack of your choice.
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
