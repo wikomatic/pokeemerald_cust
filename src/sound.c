@@ -65,7 +65,7 @@ static const struct Fanfare sFanfares[] = {
 
 void UpdateGDisableMusic(void)
 {
-    if (gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_NORMAL)
+    if (gSaveBlock2Ptr->optionsSound == OPTIONS_SOUND_MONO)
     {
         gDisableMusic = TRUE;
     }
