@@ -1606,6 +1606,14 @@
 	.2byte \item
 	.2byte \quantity
 	.endm
+    
+    .macro showitemdesc
+    .byte 0xe3
+    .endm
+    
+    .macro hideitemdesc
+    .byte 0xe4
+    .endm
 
 
 @ Supplementary
