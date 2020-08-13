@@ -248,7 +248,6 @@ EWRAM_DATA u32 gFieldStatuses = 0;
 EWRAM_DATA struct FieldTimer gFieldTimers = {0};
 EWRAM_DATA u8 gBattlerAbility = 0;
 EWRAM_DATA u16 gPartnerSpriteId = 0;
-EWRAM_DATA u8 gMaxPartyLevel = 1;
 
 // IWRAM common vars
 void (*gPreBattleCallback1)(void);
