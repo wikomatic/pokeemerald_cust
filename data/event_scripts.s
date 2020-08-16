@@ -838,11 +838,11 @@ Common_EventScript_PlayerHandedOverTheItem:: @ 82723E4
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign:: @ 8272B6A
 	.string "“Selected items for your convenience!”\n"
-	.string "POKéMON MART$"
+	.string "Pokémon Mart$"
 
 gText_PokemonCenterSign:: @ 8272B9E
 	.string "“Rejuvenate your tired partners!”\n"
-	.string "POKéMON CENTER$"
+	.string "Pokémon Center$"
 
 gText_MomOrDadMightLikeThisProgram:: @ 8272BCF
 	.string "{STR_VAR_1} might like this program.\n"
@@ -850,7 +850,7 @@ gText_MomOrDadMightLikeThisProgram:: @ 8272BCF
 	.string "Better get going!$"
 
 gText_WhichFloorWouldYouLike:: @ 8272C1D
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.\p"
+	.string "Welcome to Lilycove Department Store.\p"
 	.string "Which floor would you like?$"
 
 gText_SandstormIsVicious:: @ 8272C5F
@@ -858,16 +858,16 @@ gText_SandstormIsVicious:: @ 8272C5F
 	.string "It's impossible to keep going.$"
 
 gText_SelectWithoutRegisteredItem:: @ 8272C98
-	.string "An item in the BAG can be\n"
+	.string "An item in the Bag can be\n"
 	.string "registered for easy use.$"
 
 gText_PokemonTrainerSchoolEmail:: @ 8272CD5
-	.string "There's an e-mail from POKéMON TRAINER\n"
+	.string "There's an e-mail from Pokémon Trainer\n"
 	.string "SCHOOL.\p"
 	.string "… … … … … …\p"
-	.string "A POKéMON may learn up to four moves.\p"
-	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
+	.string "A Pokémon may learn up to four moves.\p"
+	.string "A Trainer's expertise is tested on the\n"
+	.string "move sets chosen for Pokémon.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC:: @ 8272D87
@@ -882,7 +882,7 @@ gText_UnusedNicknameReceivedPokemon:: @ 8272DB3
 
 gText_PlayerWhitedOut:: @ 8272DE3
 	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p{PLAYER} whited out!$"
+	.string "Pokémon!\p{PLAYER} whited out!$"
 
 gText_RegisteredTrainerinPokeNav:: @ 8272E0F
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
@@ -898,12 +898,12 @@ gText_ComeBackWithSecretPower:: @ 8272E30
 	.string "you good stuff in secrecy.$"
 
 gText_PokerusExplanation:: @ 8272F07
-	.string "Your POKéMON may be infected with\n"
+	.string "Your Pokémon may be infected with\n"
 	.string "POKéRUS.\p"
 	.string "Little is known about the POKéRUS\n"
 	.string "except that they are microscopic life-\l"
-	.string "forms that attach to POKéMON.\p"
-	.string "While infected, POKéMON are said to\n"
+	.string "forms that attach to Pokémon.\p"
+	.string "While infected, Pokémon are said to\n"
 	.string "grow exceptionally well.$"
 
 	.include "data/text/surf.inc"
@@ -917,7 +917,7 @@ gText_BigHoleInTheWall:: @ 827304E
 
 gText_SorryWirelessClubAdjustments:: @ 827306F
 	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS CLUB is\l"
+	.string "The Pokémon WIRELESS CLUB is\l"
 	.string "undergoing adjustments now.$"
 
 gText_UndergoingAdjustments:: @ 82730BC
@@ -926,7 +926,7 @@ gText_UndergoingAdjustments:: @ 82730BC
 
 @ Unused
 gText_SorryTradeCenterInspections:: @ 82730E5
-	.string "I'm terribly sorry. The TRADE CENTER\n"
+	.string "I'm terribly sorry. The TRADE Center\n"
 	.string "is undergoing inspections.$"
 
 @ Unused
