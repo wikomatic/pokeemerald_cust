@@ -1253,7 +1253,7 @@ static bool8 KeyboardKeyHandler_Character(u8 event)
 
 		if (gNamingScreenData->currentPage == KBPAGE_LETTERS_UPPER && GetTextCaretPosition() == 1)
             MainState_StartPageSwap();
-		
+
         sub_80E3ED8();
         if (var)
         {
