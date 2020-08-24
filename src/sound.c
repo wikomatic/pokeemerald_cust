@@ -63,14 +63,26 @@ static const struct Fanfare sFanfares[] = {
 
 #define CRY_VOLUME  120 // was 125 in R/S
 
+void UpdateGDisableMusic(void)
+{
+    if (gSaveBlock2Ptr->optionsSound == OPTIONS_SOUND_MONO)
+    {
+        gDisableMusic = TRUE;
+    }
+    else
+    {
+        gDisableMusic = FALSE;
+    }
+}
+
 void InitMapMusic(void)
 {
-    gDisableMusic = FALSE;
     ResetMapMusic();
 }
 
 void MapMusicMain(void)
 {
+    UpdateGDisableMusic();
     switch (sMapMusicState)
     {
     case 0:

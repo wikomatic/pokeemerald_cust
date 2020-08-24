@@ -15,6 +15,8 @@
 #include "strings.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "sound.h"
+#include "overworld.h"
 
 // Task data
 enum
@@ -495,6 +497,23 @@ static void BattleStyle_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_BattleStyleSet, GetStringRightAlignXOffset(1, gText_BattleStyleSet, 198), YPOS_BATTLESTYLE, styles[1]);
 }
 
+void StopOrPlayBGM(u8 selection)
+{
+    if (selection == 0)
+    {
+        StopMapMusic();
+    }
+    else
+    {
+        if (IsBGMStopped())
+        {
+            u16 currLocationMusic = GetCurrLocationDefaultMusic();
+            gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_STEREO;
+            PlayNewMapMusic(currLocationMusic);
+        }
+    }
+}
+
 static u8 Sound_ProcessInput(u8 selection)
 {
     if (gMain.newKeys & (DPAD_LEFT | DPAD_RIGHT))
@@ -502,6 +521,7 @@ static u8 Sound_ProcessInput(u8 selection)
         selection ^= 1;
         SetPokemonCryStereo(selection);
         sArrowPressed = TRUE;
+        StopOrPlayBGM(selection);
     }
 
     return selection;

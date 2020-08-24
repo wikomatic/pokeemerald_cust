@@ -1,10 +1,13 @@
 # About this branch
-This is a decapitalized (all-caps text replaced with proper capitalization) version of the [**pokeemerald**](https://travis-ci.org/pret/pokeemerald) dissasembly, originally made by [**Wyrserth**](https://github.com/Wyrserth) and adapted to the current structure of the project.
+This is a customized version of the [**pokeemerald**](https://travis-ci.org/pret/pokeemerald) dissasembly, with numerous extra features merged in from the pokeemerald community.
 
-As the disassembly continues to develop, I'll try to keep up this branch as updated as possible.
+Build status is currently showing the status of the main decomp branch, not this customization.
+[![Build Status][travis-badge]][travis]
 
-It builds the following ROM:
+[travis]: https://travis-ci.org/pret/pokeemerald
+[travis-badge]: https://travis-ci.org/pret/pokeemerald.svg?branch=master
 
+SHA hash is currently showing the status of the main decomp branch, not this customization.
 * pokeemerald.gba `sha1: 8C19F2555E10DFF32A9914CEAC360B018AF42E6C`
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
@@ -29,4 +32,4 @@ Other disassembly and/or decompilation projects:
 
 ## Contacts
 
-You can find us on [Discord](https://discord.gg/d5dubZ3) and [IRC](https://kiwiirc.com/client/irc.freenode.net/?#pret).
+You can find pret on [Discord](https://discord.gg/d5dubZ3) and [IRC](https://kiwiirc.com/client/irc.freenode.net/?#pret).
